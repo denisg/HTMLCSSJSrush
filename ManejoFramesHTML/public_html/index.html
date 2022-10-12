@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ejercicio frames</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!--frame externo
+    creacion de un frame externo de 2 columnas. cols es...25% la primera columna, '*' la 2da columna el resto de dimension-->
+    <frameset cols="25%,*" frameborder="0" framespacing="0" border="0">
+        <!--frame izquierda-->
+        <frame src="navegacion.html" name="navegacion"><!--frame derecha, es otro frameset-->
+            <!--tiene 2 renglones este frame-->
+            <frameset rows="30%,*">
+                <!--frame superior-->
+                <frame src="titulo.html" name="titulo" scrolling="no">
+                <!--frame inferior-->
+                <frame src="contenidoInicial.html" name="contenido">
+            </frameset>
+            <noframes><!--se muestra esto en caso de que el navegador no soporte frames-->
+                Esta es una pagina que no pudo mostrar los frames
+            </noframes>
+    </frameset>
+    <body>
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

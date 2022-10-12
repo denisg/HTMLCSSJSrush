@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ejercicio formulario</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+
+    </head>
+    <body>
+        <!--'action' indica quien va a procesar el formulario con sus datos-->
+        <form name="form1" action="/recursoLadoServidor" method="post">
+            <input type="hidden" name="oculto" value="valor oculto">
+            <table width="200" id="one-column-emphasis">
+                <caption>Formulario registro de datos</caption>
+                <tr>
+                    <td class="oce-first">
+                        Usuario:
+                    </td>
+                    <td>
+                        <input class="default" type="text" name="usuario" placeholder="Escribir usuario"/>
+                    </td>           
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Password:
+                    </td>
+                    <td>
+                        <input class="default" type="password" name="password" placeholder="Escribir password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Tecnologia:
+                    </td>
+                    <td>
+                        Java<input type="checkbox" name="tecnologia" value="java">
+                        .Net<input type="checkbox" name="tecnologia" value="net">
+                        PHP<input type="checkbox" name="tecnologia" value="php">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Genero:
+                    </td>
+                    <td>
+                        Hombre<input type="radio" name="genero" vlaue="H">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<!--genera espacios-->
+                        Mujer<input type="radio" name="genero" value="M">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Ocupacion:
+                    </td>
+                    <td>
+                        <select name="ocupacion" class="default">
+                            <option value="1">profe</option>
+                            <option value="2">inge</option>
+                            <option value="3">arqui</option>
+                            <option value="4">jubilado</option>
+                            <option value="5" selected>Otro</option>
+                            <!--'selected' es para la opcion que se muestra por default--> 
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Musica Favorita
+                    </td>
+                    <td>
+                        <select name="musica" multiple class="default">
+                            <option value="rock">rock</option>
+                            <option value="house">house</option>
+                            <option value="pop">pop </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Comentarios
+                    </td>
+                    <td>
+                        <textarea name="comentarios" class="default" rows="2" cols="30">
+                            Escribir un texto
+                        </textarea>
+                    </td>
+                </tr>
+                <tr style="text-align:center">
+                    <td>
+                        <input type="reset" value="Limpiar" class="default">
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar" class="default">
+                    </td>
+                </tr>
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+    </body>
+</html>
